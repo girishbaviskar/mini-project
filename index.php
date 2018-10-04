@@ -8,9 +8,48 @@
 <link href="css/aalpha.css" rel="stylesheet" type="text/css">
 
 <style type="text/css">
-<!--
-.style1 {color: #CCCCCC}
--->
+#sliderbox{
+	position:relative;
+	width:2000px;
+	animation-name:slideranimation;
+	animation-duration:15s;
+	animation-iteration-count:infinite;
+}
+#sliderbox img{
+	float:left;
+	
+}
+@keyframes slideranimation{
+	0%
+	{
+		left:0px;
+	}
+	20%
+	{
+		left:0px;
+	}
+	25%
+	{
+		left:-500px;
+	}
+	45%
+	{
+		left:-500px;
+	}
+	50%
+	{
+		left:-1000px;
+	}
+	70%
+	{
+		left:-1000px;
+	}
+	80%
+	{
+		left:-1600px;
+	}
+	
+}
 </style>
 </head>
 
@@ -30,6 +69,20 @@
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td bgcolor="#FFFFFF" width="900"><table border="0" align="center" width="99%">
+	<div id="container">
+		<div id="sliderbox">
+			<img src="images/pic1.jpg" height="250" width="500"/>
+			<img src="images/pic2.jpg" height="250" width="500"/>
+			<img src="images/pic2.5.jpg" height="250" width="500"/>
+			<img src="images/pic3.png" height="250" width="500"/>
+			</div>
+		</div>
+
+	
+	
+	
+	
+	
       <tbody><tr>
         <td width="22%"><table border="0" align="center" width="185">
           <tbody><tr bgcolor="#EFF7FC">
@@ -38,9 +91,7 @@
           <tr bgcolor="#EFF7FC">
             <td class="aalpha" height="19"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> Features</strong></td>
           </tr>
-          <tr>
-            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> Demo</strong></td>
-          </tr>
+          
           <tr bgcolor="#EFF7FC">
             <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> Purchase </strong></td>
           </tr>
