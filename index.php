@@ -231,28 +231,17 @@ function showSlides(n) {
       <tbody><tr>
         <td width="22%"><table border="0" align="center" width="185">
           <tbody><tr bgcolor="#EFF7FC">
-            <td class="aalpha" bgcolor="#0066CC" height="19" width="179"><img src="home_files/navig.gif" height="24" width="113"></td>
-          </tr>
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha" height="19"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> <a href="features.php" > Features  </a></strong></td>
-			
+            
           </tr>
           
           
-          <tr>
-            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"><a href="screen.php"> Screenshots</a></strong></td>
-          </tr>
           
-          <tr>
-            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> <a href="license.php">License Agreement</a> </strong></td>
-          </tr>
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"><a href="faq.php"> FAQ</a></strong></td>
-          </tr>
           
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha" bgcolor="#FFFFFF"><strong><img src="home_files/arrow_right.gif" height="9" width="9"><a href="contact.php"> Contact</a></strong></td>
-          </tr>
+          
+          
+          
+          
+          
         </tbody></table>
               <p align="center"></p>
           <p align="center"></p><!-- #EndLibraryItem --></td>
@@ -326,6 +315,14 @@ complex" </p></td>
   </tr>
   <tr>
     <td bgcolor="#2284d5" height="40" width="476">&nbsp;</td>
+	<tr bgcolor="#EFF7FC">
+            <td class="aalpha"><strong><a href="faq.php"> FAQ</a>
+			|
+	
+	<strong><a href="contact.php"> Contact</a>
+			|
+	<strong><a href="terms.php">Terms and Conditions</a> </strong></td>
+          </tr>
     <td bgcolor="#2284d5" width="304"><p class="lowerstyle">
     
     </p>
