@@ -167,19 +167,19 @@ img {vertical-align: middle;}
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="images/pic1.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+  <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="images/pic2.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+  <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="images/pic4.png" style="width:100%" height="50%">
-  <div class="text">Caption Three</div>
+  <div class="text"></div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -234,29 +234,24 @@ function showSlides(n) {
             <td class="aalpha" bgcolor="#0066CC" height="19" width="179"><img src="home_files/navig.gif" height="24" width="113"></td>
           </tr>
           <tr bgcolor="#EFF7FC">
-            <td class="aalpha" height="19"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> Features</strong></td>
+            <td class="aalpha" height="19"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> <a href="features.php" > Features  </a></strong></td>
+			
+          </tr>
+          
+          
+          <tr>
+            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"><a href="screen.php"> Screenshots</a></strong></td>
+          </tr>
+          
+          <tr>
+            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> <a href="license.php">License Agreement</a> </strong></td>
+          </tr>
+          <tr bgcolor="#EFF7FC">
+            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"><a href="faq.php"> FAQ</a></strong></td>
           </tr>
           
           <tr bgcolor="#EFF7FC">
-            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> Purchase </strong></td>
-          </tr>
-          <tr>
-            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> Screenshots</strong></td>
-          </tr>
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> Platform Requirements </strong></td>
-          </tr>
-          <tr>
-            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> License Agreement </strong></td>
-          </tr>
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> FAQ</strong></td>
-          </tr>
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha" bgcolor="#FFFFFF"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> Testimonials</strong></td>
-          </tr>
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha" bgcolor="#FFFFFF"><strong><img src="home_files/arrow_right.gif" height="9" width="9"> Contact</strong></td>
+            <td class="aalpha" bgcolor="#FFFFFF"><strong><img src="home_files/arrow_right.gif" height="9" width="9"><a href="contact.php"> Contact</a></strong></td>
           </tr>
         </tbody></table>
               <p align="center"></p>
