@@ -8,27 +8,27 @@ $action = $_GET['action'];
 
 switch($action) {
 	case 'add-cons':
-		addCons();
+		addCons($dbConn);
 	break;
 	
 	case 'delivered':
-		markDelivered();
+		markDelivered($dbConn);
 	break;
 	
 	case 'add-office':
-		addNewOffice();
+		addNewOffice($dbConn);
 	break;
 	
 	case 'add-manager':
-		addManager();
+		addManager($dbConn);
 	break;
 	
 	case 'update-status':
-		updateStatus();
+		updateStatus($dbConn);
 	break;
 	
 	case 'change-pass':
-		changePass();
+		changePass($dbConn);
 	break;
 			
 	case 'logOut':
@@ -37,7 +37,7 @@ switch($action) {
 	
 }//switch
 
-function addCons(){
+function addCons($dbConn){
 
 	$Shippername = $_POST['Shippername'];
 	$Shipperphone = $_POST['Shipperphone'];
@@ -67,23 +67,23 @@ function addCons(){
 	$sql = "INSERT INTO tbl_courier (cons_no, ship_name, phone, s_add, rev_name, r_phone, r_add,  type, weight, invice_no, qty, book_mode, freight, mode, pick_date, pick_time, status, comments, book_date )
 			VALUES('$ConsignmentNo', '$Shippername','$Shipperphone', '$Shipperaddress', '$Receivername','$Receiverphone','$Receiveraddress', '$Shiptype',$Weight , '$Invoiceno', $Qnty, '$Bookingmode', '$Totalfreight', '$Mode', '$Packupdate', '$Pickuptime', '$status', '$Comments', NOW())";	
 	//echo $sql;
-	dbQuery($sql);
+	dbQuery($dbConn,$sql);
 	header('Location: courier-add-success.php'); 
 	
 	//echo $Ship;
 }//addCons
 
-function markDelivered() {
+function markDelivered($dbConn) {
 	$cid = (int)$_GET['cid'];
 	$sql = "UPDATE tbl_courier
 			SET status = 'Delivered'
 			WHERE cid= $cid";
-	dbQuery($sql);
+	dbQuery($dbConn,$sql);
 	header('Location: delivered-success.php'); 
 			
 }//markDelivered();
 
-function addNewOffice() {
+function addNewOffice($dbConn) {
 	
 	$OfficeName = $_POST['OfficeName'];
 	$OfficeAddress = $_POST['OfficeAddress'];
@@ -94,11 +94,11 @@ function addNewOffice() {
 	
 	$sql = "INSERT INTO tbl_offices (off_name, address, city, ph_no, office_time, contact_person)
 			VALUES ('$OfficeName', '$OfficeAddress', '$City', '$PhoneNo', '$OfficeTiming', '$ContactPerson')";
-	dbQuery($sql);
+	dbQuery($dbConn,$sql);
 	header('Location: office-add-success.php');
 }//addNewOffice
 
-function addManager() {
+function addManager($dbConn) {
 	
 	$ManagerName = $_POST['ManagerName'];
 	$Password = $_POST['Password'];
@@ -109,12 +109,12 @@ function addManager() {
 	
 	$sql = "INSERT INTO tbl_courier_officers (officer_name, off_pwd, address, email, ph_no, office, reg_date)
 			VALUES ('$ManagerName', '$Password', '$Address', '$Email', '$PhoneNo', '$OfficeName', NOW())";
-	dbQuery($sql);
+	dbQuery($dbConn,$sql);
 	header('Location: manager-add-success.php');
 
 }//addNewOffice
 
-function updateStatus() {
+function updateStatus( $dbConn) {
 	
 	$OfficeName = $_POST['OfficeName'];
 	$status = $_POST['status'];
@@ -125,13 +125,13 @@ function updateStatus() {
 	
 	$sql = "INSERT INTO tbl_courier_track (cid, cons_no, current_city, status, comments, bk_time)
 			VALUES ($cid, '$cons_no', '$OfficeName', '$status', '$comments', NOW())";
-	dbQuery($sql);
+	dbQuery($dbConn,$sql);
 	
 	$sql_1 = "UPDATE tbl_courier 
 				SET status = '$status' 
 				WHERE cid = $cid
 				AND cons_no = '$cons_no'";
-	dbQuery($sql_1);	
+	dbQuery($dbConn,$sql_1);	
 	
 	header('Location: update-success.php');
 
