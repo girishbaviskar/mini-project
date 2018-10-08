@@ -222,26 +222,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-
-	
-	
-	
-	
-	
-      <tbody><tr>
+<tbody><tr>
         <td width="22%"><table border="0" align="center" width="185">
           <tbody><tr bgcolor="#EFF7FC">
-            
+            <tr bgcolor="EFEFEF">
+                <td class="aalpha" valign="top"><div align="left">Enter the Consignment no </div></td>
+              </tr>
+              <tr bgcolor="EFEFEF">
+                <td valign="top"><div align="center">
+            <form action="track-result.php" method="post" name="form" id="form" >
+			      <input name="Consignment" class="gentxt" id="Consignment" maxlength="50" type="text" style="font-size: 10pt; height: 70px; width:150px; " > 
+                  <input name="Submit" type="submit" class="gentxt" onClick="MM_validateForm('Consignment','','R');return document.MM_returnValue" value="Track now">
+            </form>
           </tr>
           
-          
-          
-          
-          
-          
-          
-          
-          
+         
         </tbody></table>
               <p align="center"></p>
           <p align="center"></p><!-- #EndLibraryItem --></td>

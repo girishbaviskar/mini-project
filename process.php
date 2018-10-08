@@ -114,7 +114,7 @@ function addManager($dbConn) {
 
 }//addNewOffice
 
-function updateStatus( $dbConn) {
+function updateStatus($dbConn) {
 	
 	$OfficeName = $_POST['OfficeName'];
 	$status = $_POST['status'];

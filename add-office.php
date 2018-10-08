@@ -1,6 +1,7 @@
 <?php 
 session_start();
 require_once('library.php');
+require_once('database.php');
 $rand = get_rand_id(8);
 echo $rand;
 ?>
