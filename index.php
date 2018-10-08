@@ -316,7 +316,7 @@ complex" </p></td>
   <tr>
     <td bgcolor="#2284d5" height="40" width="476">&nbsp;
       <div id="footer" font-size="11px">
-      <div class="lflt"><a href="terms.php">Terms &amp; Conditions</a> | <a href="privacy.asp">Privacy Policy</a> | Best viewed in IE v8, Firefox v11, Chrome v23 & above</div>
+      <div class="lflt"><a href="terms.php">Terms &amp; Conditions</a> | <a href="contact.php">Contacts</a> |  <a href="faq.php">FAQ's</a>| Best viewed in IE v8, Firefox v11, Chrome v23 & above</div>
           </div></td>
 	
       <p class="lowerstyle">&nbsp;</p></td>
