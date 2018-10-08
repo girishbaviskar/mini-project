@@ -458,6 +458,11 @@ function getSelected(opt)
               <textarea name="Shipperaddress" cols="27" rows="2" id="Shipperaddress"></textarea>
               *</span></td>
           </tr>
+           <tr>
+            <td class="TrackMediumBlue" align="right">Pincode  :</td>
+            <td>&nbsp;</td>
+            <td><input name="Shipperpin" id="Shipperpin" maxlength="13" size="40" type="TEXT"></td>
+          </tr>
           <tr>
             <td class="TrackMediumBlue" align="right">&nbsp;</td>
             <td>&nbsp;</td>
@@ -475,7 +480,7 @@ function getSelected(opt)
           <tr>
             <td class="TrackMediumBlue" align="right">Phone : </td>
             <td>&nbsp;</td>
-            <td><input name="Receiverphone" id="Receiverphone" maxlength="13" size="40" type="TEXT"></td>
+            <td><input name="Receiverphone" id="Receiverphone" maxlength="6" size="40" type="TEXT"></td>
           </tr>
           <tr>
             <td class="TrackMediumBlue" align="right"> Address: : </td>
@@ -483,6 +488,13 @@ function getSelected(opt)
             <td><span class="REDLink">
               <textarea name="Receiveraddress" cols="27" rows="2" id="Receiveraddress"></textarea>
               *</span></td>
+          </tr>
+           <tr>
+            <td class="TrackMediumBlue" align="right">Pincode  :</td>
+            <td>&nbsp;</td>
+            <td><input name="Receiverpin" id="Receiverpin" maxlength="6"size="40" type="Text">
+            	<span class="REDLink">*</span></
+            </td>
           </tr>
           <tr>
             <td class="TrackMediumBlue" align="right">&nbsp;</td>
