@@ -146,7 +146,7 @@ img {vertical-align: middle;}
 </style>
 </head>
 
-<body bgcolor="#EE4035">
+<body bgcolor="#F4F4F4">
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900" style="padding-top:20px;">
   <tbody><tr>
     <td width="900"><img src="images/trheader.jpg" height="120" width="900" ></td>
