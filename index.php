@@ -314,20 +314,15 @@ complex" </p></td>
 	</div></td>
   </tr>
   <tr>
-    <td bgcolor="#2284d5" height="40" width="476">&nbsp;</td>
-	<tr bgcolor="#EFF7FC">
-            <td class="aalpha"><strong><a href="faq.php"> FAQ</a>
-			|
+    <td bgcolor="#2284d5" height="40" width="476">&nbsp;
+      <div id="footer" font-size="11px">
+      <div class="lflt"><a href="terms.php">Terms &amp; Conditions</a> | <a href="privacy.asp">Privacy Policy</a> | Best viewed in IE v8, Firefox v11, Chrome v23 & above</div>
+          </div></td>
 	
-	<strong><a href="contact.php"> Contact</a>
-			|
-	<strong><a href="terms.php">Terms and Conditions</a> </strong></td>
-          </tr>
-    <td bgcolor="#2284d5" width="304"><p class="lowerstyle">
-    
-    </p>
       <p class="lowerstyle">&nbsp;</p></td>
   </tr>
+
+
 </tbody></table>
 
 </body></html>
