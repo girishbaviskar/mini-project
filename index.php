@@ -146,7 +146,7 @@ img {vertical-align: middle;}
 </style>
 </head>
 
-<body bgcolor="#F4F4F4">
+<body bgcolor="#EE4035">
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900" style="padding-top:20px;">
   <tbody><tr>
     <td width="900"><img src="images/trheader.jpg" height="120" width="900" ></td>
@@ -228,12 +228,20 @@ function showSlides(n) {
 	
 	
 	
-     <tbody><tr>
+      <tbody><tr>
         <td width="22%"><table border="0" align="center" width="185">
           <tbody><tr bgcolor="#EFF7FC">
             
-          
           </tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
         </tbody></table>
               <p align="center"></p>
           <p align="center"></p><!-- #EndLibraryItem --></td>
@@ -307,6 +315,14 @@ complex" </p></td>
   </tr>
   <tr>
     <td bgcolor="#2284d5" height="40" width="476">&nbsp;</td>
+	<tr bgcolor="#EFF7FC">
+            <td class="aalpha"><strong><a href="faq.php"> FAQ</a>
+			|
+	
+	<strong><a href="contact.php"> Contact</a>
+			|
+	<strong><a href="terms.php">Terms and Conditions</a> </strong></td>
+          </tr>
     <td bgcolor="#2284d5" width="304"><p class="lowerstyle">
     
     </p>
