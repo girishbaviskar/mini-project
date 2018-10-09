@@ -225,6 +225,8 @@ function showSlides(n) {
 <tbody><tr>
         <td width="22%"><table border="0" align="center" width="185">
           <tbody><tr bgcolor="#EFF7FC">
+            <td class="aalpha" bgcolor="#EFF7FC" height="19"><div align="center">
+                      <p><strong> Status Check </strong>:</p>
             <tr bgcolor="EFEFEF">
                 <td class="aalpha" valign="top"><div align="left">Enter the Consignment no </div></td>
               </tr>
@@ -277,13 +279,7 @@ complex" </p></td>
               <br>
               <table border="0" align="center" width="90%">
                 <tbody><tr bgcolor="#EFF7FC">
-                  <td class="aalpha" bgcolor="#EFF7FC" height="19"><div align="center">
-                      <p><strong> Status Check </strong>:</p>
-                  </div></td>
-                </tr>
-                <tr bgcolor="#EFF7FC">
-                  <td class="aalpha" bgcolor="#FFFFFF" height="19"><div align="center"><a href="track-status.php" target="_self">Click Here </a> </div></td>
-                </tr>
+                  
                 <tr bgcolor="#EFF7FC">
                   <td class="aalpha" bgcolor="#EFF7FC" height="19"><div align="center">
                       <p><strong> ADMIN Login </strong>:</p>

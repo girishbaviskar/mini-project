@@ -17,7 +17,7 @@ extract($data);
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Admin</title>
+<title>Tracking your courier</title>
 <link href="css/mystyle.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -31,14 +31,8 @@ extract($data);
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
 
   <tbody><tr>
-
-    <td width="900">
-<img src="images/trheader.jpg" />
-
-	</td>
-
+    <td width="900"><img src="images/trheader.jpg" height="120" width="900" ></td>
   </tr>
-
   
 
   <tr>
