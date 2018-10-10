@@ -26,12 +26,13 @@ function memloginvalidate()
         document.form1.txtusername.focus();
         return false;
      }
-   if(document.form1.txtpassword.value == "")
+   if(document.form1.txtpassword.value == "" || document.form1.txtpassword.value!="admin123")
      {
-        alert("Please enter admin Password.");
+        alert("Please enter correct admin Password.");
         document.form1.txtpassword.focus();
         return false;
      }
+	
    }
 
 //-->
