@@ -42,10 +42,12 @@ function addCons($dbConn){
 	$Shippername = $_POST['Shippername'];
 	$Shipperphone = $_POST['Shipperphone'];
 	$Shipperaddress = $_POST['Shipperaddress'];
+	$Shipperpin = $_POST['Shipperpin'];
 	
 	$Receivername = $_POST['Receivername'];
 	$Receiverphone = $_POST['Receiverphone'];
 	$Receiveraddress = $_POST['Receiveraddress'];
+	$Receiverpin = $_POST['Receiverpin'];
 	
 	$ConsignmentNo = $_POST['ConsignmentNo'];
 	$Shiptype = $_POST['Shiptype'];
@@ -64,8 +66,8 @@ function addCons($dbConn){
 	$Comments = $_POST['Comments'];
 	
 
-	$sql = "INSERT INTO tbl_courier (cons_no, ship_name, phone, s_add, rev_name, r_phone, r_add,  type, weight, invice_no, qty, book_mode, freight, mode, pick_date, pick_time, status, comments, book_date )
-			VALUES('$ConsignmentNo', '$Shippername','$Shipperphone', '$Shipperaddress', '$Receivername','$Receiverphone','$Receiveraddress', '$Shiptype',$Weight , '$Invoiceno', $Qnty, '$Bookingmode', '$Totalfreight', '$Mode', '$Packupdate', '$Pickuptime', '$status', '$Comments', NOW())";	
+	$sql = "INSERT INTO tbl_courier (cons_no, ship_name, phone, s_add, rev_name, r_phone, r_add,  type, weight, invice_no, qty, book_mode, freight, mode, pick_date, pick_time, status, comments, book_date,s_pin,r_pin )
+			VALUES('$ConsignmentNo', '$Shippername','$Shipperphone', '$Shipperaddress', '$Receivername','$Receiverphone','$Receiveraddress', '$Shiptype',$Weight , '$Invoiceno', $Qnty, '$Bookingmode', '$Totalfreight', '$Mode', '$Packupdate', '$Pickuptime', '$status', '$Comments', NOW() ,$Shipperpin,$Receiverpin)";	
 	//echo $sql;
 	dbQuery($dbConn,$sql);
 	header('Location: courier-add-success.php'); 

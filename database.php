@@ -21,7 +21,7 @@ function dbAffectedRows()
 {
 	global $dbConn;
 	
-	return mysql_affected_rows($dbConn);
+	return mysqli_affected_rows($dbConn);
 }
 
 function dbFetchArray($result, $resultType = MYSQL_NUM) {
