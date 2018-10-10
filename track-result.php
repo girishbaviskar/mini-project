@@ -31,7 +31,7 @@ extract($data);
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
 
   <tbody><tr>
-    <td width="900"><img src="images/trheader.jpg" height="120" width="900" ></td>
+    <td width="900"><img src="images/trheader.jpg" height="120" width="900" onclick="index" ></td>
   </tr>
   
 
