@@ -1,7 +1,15 @@
 <?php
 session_start();
 require_once('library.php');
-isUser();
+require_once('database.php');
+//isUser();
+
+$sql = "SELECT cid, cons_no, ship_name, rev_name, pick_date, pick_time, status
+		FROM tbl_courier
+		WHERE status != 'Delivered'
+		ORDER BY cid DESC 
+		LIMIT 0, 20";
+$result = dbQuery($dbConn,$sql);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
@@ -14,11 +22,55 @@ isUser();
 
 <?php
 include("header.php");
+
 ?>
 
+
+
+ 
+  <table border="0" cellpadding="1" cellspacing="1" align="center" width="95%">
+    <tbody>
+	<tr>
+    <td>
 	</td>
+    </tr>
+  </tbody></table>
+  <table class="blackbox" border="0" cellpadding="1" cellspacing="1" align="center" width="95%">
+    <tbody><tr class="BoldRED" bgcolor="#FFFFFF" style="height:20px;">
+      <td class="newtext" bgcolor="#EDEDED" width="6%"><div align="center">Edit</div></td>
+      <td class="newtext" bgcolor="#EDEDED" width="10%">Consignment No </td>
+      <td class="newtext" bgcolor="#EDEDED" width="7%">Shipper</td>
+      <td class="newtext" bgcolor="#EDEDED" width="11%">Receiver</td>
+      <td class="newtext" bgcolor="#EDEDED" width="11%">Pickup Date/Time</td>
+      <td class="newtext" bgcolor="#EDEDED" width="9%">Status</td>
+    </tr>
+	<?php
+	
+	while($data = dbFetchAssoc($result)){
+	extract($data);	
+	?>
+      <tr onMouseOver="this.bgColor='gold';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF">
+	
+      <td class="gentxt" align="center">
+	  <a href="edit-courier.php?cid=<?php echo $cid; ?>">
+	  <img src="images/edit_icon.gif" border="0" height="20" width="20"></a>
+	  </td>
+      <td class="gentxt"><?php echo $cons_no; ?></td>
+      <td class="gentxt"><?php echo $ship_name; ?></td>
+      <td class="gentxt"><?php echo $rev_name; ?></td>
+      <td class="gentxt"><?php echo $pick_date; ?> - <?php echo $pick_time; ?></td>
+      <td class="gentxt"><?php echo $status; ?></td>
+    </tr>
+    <?php
+	}//while
+	?>
+	  </tbody></table>
+  <br>
+	
+    </td>
   </tr>
-  
+  	
+ <!-- 
   <tr>
     <td bgcolor="#FFFFFF"><div align="center"> <br>
         <br>
@@ -45,6 +97,10 @@ include("header.php");
           <br>
     </div></td>
   </tr>
+  -->
+  
+  
+  
   <tr>
     <td>
 	<table border="0" cellpadding="0" cellspacing="0" align="center" width="900">

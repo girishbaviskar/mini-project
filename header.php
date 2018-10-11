@@ -1,3 +1,4 @@
+
 <?php 
 //session_start();
 ?>
@@ -10,20 +11,19 @@
 .style2 {color: #FFFFFF}
 -->
 </style>
-
 <table border="0" cellpadding="0" cellspacing="0" width="900">
 <tbody><tr>
 <td colspan="15">
-<img src="images/trheader.jpg" height="109" width="900"></td>
+<a href="index.php"><img src="images/trheader.jpg" height="109" width="900"></a></td>
 </tr>
 <tr bgcolor="#2284d5">
 <td height="30" width="110"><div align="center"><span class="headtext13 style2"><strong>SHIPMENT:</strong></span></div></td>
 <td height="30" width="83"><div class="lowerstyle" align="center"> <a href="add-courier.php">Add</a></div></td>
-<td width="4"><div align="left">|</div></td>
-<td height="30" width="74"> <div class="lowerstyle" align="center"><a href="courier-list.php">Update  </a></div></td>
+
+
 <td width="4"><div align="left">|</div></td>
 <td width="89"><div class="lowerstyle" align="center">
-  <div align="center"><a href="search-edit.php">Search &amp; Edit </a></div>
+  <div align="center"><a href="search-edit.php">Search </a></div>
 </div></td>
 <td width="3"><div align="left">|</div></td>
 <td height="30" width="96"><div align="center"><span class="headtext13 style2"><strong>REPORTS</strong></span><span class="heading"><strong> : </strong></span></div></td>
@@ -34,12 +34,9 @@
 <td width="71"><div class="lowerstyle" align="center"><a href="http://tracking4web.com/admin/report_statuswise.php?status=all"></a> </div></td>
 <td width="3"></td>
 <td height="30" width="80">
-
 </td>
 </tr>
-
 </tbody></table>
-
 <?php
 if(isset($_SESSION['user_type']) && $_SESSION['user_type'] == 'admin-role') {
 ?>

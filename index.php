@@ -148,7 +148,7 @@
   <table border="0" cellpadding="0" cellspacing="0" align="center" width="900" style="padding-top:20px;">
   <tbody>
   <tr>
-    <td width="900"><img src="images/trheader.jpg" height="120" width="900" ></td>
+    <td width="900"><a href="index.php"><img src="images/trheader.jpg" height="120" width="900" ></a></td>
   </tr>
   <tr>
     <td bgcolor="#EE4035">&nbsp;</td>
@@ -213,18 +213,13 @@
        <p align="center"></p>
        <p align="center"></p><!-- #EndLibraryItem --></td>
        <td height="221" width="1%"><img src="home_files/l1.gif" height="292" width="1"></td>
-       <td class="aalpha" width="54%"><p class="navi" align="justify"><strong>Courier Management System  </strong> is the simplest solution for <strong>Courier &amp; Cargo Tracking</strong> Business. If you need to enable Tracking Option in your existing or new website, this is quickest Software Solution. </p>
-        <p class="navi" align="justify">You can get install it yourselves or  We do the installation and brand it in your name on your hosting ! </p>
-        <p class="navi" align="justify">The Courier Software is Very 
-          easy to setup and manage powerful administration. Provide online 
-          tracking system of consignment and shipping detail for International or 
-        domestic shipping. </p>
-        <p class="navi" align="justify">We have made this script, a very simple one, which means SIMPLE  ! Read More on the Features<strong>.</strong></p>
+       <td class="aalpha" width="54%"><p class="navi" align="justify"><strong>At CMS, we deliver more than packages. We deliver joy during the holidays. We deliver hope to survivors of natural disasters. We deliver expanded potential for growth and jobs by helping businesses reach new markets.</strong> </p>
+        <p class="navi" align="justify">
+Connecting people with goods, services, ideas and technologies creates opportunities that fuel innovation, energize businesses and lift communities to higher standards of living.</p>
+        <p class="navi" align="justify"> </p>
+        
         <p class="navi" align="justify"><strong>Our CEO quotes : </strong></p>
-        <p class="navi" align="justify">" We decided to develop this 
-          small application for the simple reason being, not many such scripts are
-          available in the market and few of such that exist are vast and 
-        complex" </p></td>
+        <p class="navi" align="justify">" With networks that span billions of people across six continents, delivering is our business. It’s also our responsibility to deliver the resources that improve the lives of those we serve" </p></td>
         <td class="aalpha" width="2%"><div align="center"><img src="home_files/l2.gif" height="292" width="1"></div></td>
         <td class="aalpha" width="21%"><table border="0" align="center" width="89%">
           <tbody><tr bgcolor="#EFF7FC">
@@ -277,7 +272,7 @@
     <tr>
       <td bgcolor="#2284d5" height="40" width="476">&nbsp;
         <div id="footer" font-size="11px">
-          <div class="lflt"><a href="terms.php">Terms &amp; Conditions</a> | <a href="contact.php">Contacts</a> |  <a href="faq.php">FAQ's</a>| Best viewed in IE v8, Firefox v11, Chrome v23 & above</div>
+          <div class="lflt"><a href="terms.php">Terms &amp; Conditions</a> | <a href="contact.php">Contact Us</a>| Best viewed in IE v8, Firefox v11, Chrome v23 & above</div>
         </div></td>
 
         <p class="lowerstyle">&nbsp;</p></td>

@@ -53,7 +53,7 @@ function memloginvalidate()
 </style>
 <table border="0" cellpadding="0" cellspacing="0" width="782">
 <tbody><tr>
-<td colspan="15"><img src="images/trheader.jpg" height="109" width="780"></td>
+<td colspan="15"><a href="index.php"><img src="images/trheader.jpg" height="120" width="900" ></a></td>
 </tr>
 
 		
